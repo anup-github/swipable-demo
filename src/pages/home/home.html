@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hide-nav-bar="true">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,12 +7,31 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding class="page-home">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+        <div class="card" on-tap="reportTap('tap')">
+          <div class="item item-body">
+            <img class="full-image" src="assets/icon/Desert.jpg">
+            <p>
+              This is a "Facebook" styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.
+            </p>
+            <p>
+              <a href="#" class="subdued">1 Like</a>
+              <a href="#" class="subdued">5 Comments</a>
+            </p>
+          </div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+              <i class="fa fa-thumbs-o-up"></i> Like
+            </a>
+            <a class="tab-item" href="#">
+              <i class="icon ion-chatbox"></i> Comment
+            </a>
+            <a class="tab-item" href="#">
+              <i class="icon ion-share"></i> Share
+            </a>
+          </div>
+
+        </div>
 </ion-content>
